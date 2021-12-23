@@ -54,7 +54,7 @@ class LaunchTask extends Task
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 120, 20);
-        } elseif ($this->timer <= 0) {
+        } elseif ($this->timer <= 1) {
             $player->sendMessage("Fireworks Stopping.");
             $task = $this->tasks[$player->getId()];
             unset($this->tasks[$player->getId()]);
