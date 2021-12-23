@@ -4,6 +4,7 @@
 namespace princepines\ChristmasPMnS;
 
 use pocketmine\scheduler\Task;
+use princepines\ChristmasPMnS\FireworkTask;
 
 class LaunchTask extends Task
 {
@@ -24,12 +25,12 @@ class LaunchTask extends Task
     {
         $player = $this->main->getServer()->getPlayerExact($this->playerName);
         $this->timer--;
-        if ($this->timer = 878) {
+        if ($this->timer == 878) {
             $player->sendMessage("Fireworks Starting.");
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 40, 20);
-        } elseif ($this->timer = 777) {
+        } elseif ($this->timer == 777) {
             $task = $this->tasks[$player->getId()];
             unset($this->tasks[$player->getId()]);
             $task->getHandler()->cancel();
@@ -37,7 +38,7 @@ class LaunchTask extends Task
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 80, 20);
-        } elseif ($this->timer = 625) {
+        } elseif ($this->timer == 625) {
             $task = $this->tasks[$player->getId()];
             unset($this->tasks[$player->getId()]);
             $task->getHandler()->cancel();
@@ -45,7 +46,7 @@ class LaunchTask extends Task
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 50, 20);
-        } elseif ($this->timer = 532) {
+        } elseif ($this->timer == 532) {
             $task = $this->tasks[$player->getId()];
             unset($this->tasks[$player->getId()]);
             $task->getHandler()->cancel();
@@ -53,7 +54,7 @@ class LaunchTask extends Task
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 120, 20);
-        } elseif ($this->timer <= 1) {
+        } elseif ($this->timer <= 0) {
             $player->sendMessage("Fireworks Stopping.");
             $task = $this->tasks[$player->getId()];
             unset($this->tasks[$player->getId()]);
