@@ -37,7 +37,7 @@ class main extends PluginBase implements Listener
                         $players->dataPacket($pk);
 
                         $players->sendMessage("============" . TextFormat::RED . " PMnS " . TextFormat::RESET . "============");
-                        $players->sendMessage("Merry Christmas Everyone!\n On behalf of PMnS Team\n" . TextFormat::AQUA . "Namamasko po!\n" . TextFormat::RESET . "You can send us pamasko/donations to our GCash Account!\n" . TextFormat::AQUA . "09199278009 - Frizth Lyco T.\n" . TextFormat::RESET . "Thank You po and Happy Holidays!");
+                        $players->sendMessage("Merry Christmas Everyone!\n On behalf of PMnS Team\n" . TextFormat::AQUA . "Namamasko po!\n" . TextFormat::RESET . "You can send us pamasko/donations to our GCash Account!\n" . TextFormat::AQUA . "09199278009 - Frizth Lyco T.\n" . TextFormat::RESET . "Thank you po and Happy Holidays!");
                         $players->sendMessage("============" . TextFormat::RED . " PMnS " . TextFormat::RESET . "============");
                     }
                 }

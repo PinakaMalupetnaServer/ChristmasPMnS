@@ -30,16 +30,25 @@ class LaunchTask extends Task
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 40, 20);
         } elseif ($this->timer = 777) {
+            $task = $this->tasks[$player->getId()];
+            unset($this->tasks[$player->getId()]);
+            $task->getHandler()->cancel();
             $player->sendMessage("second song instance.");
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 80, 20);
         } elseif ($this->timer = 625) {
+            $task = $this->tasks[$player->getId()];
+            unset($this->tasks[$player->getId()]);
+            $task->getHandler()->cancel();
             $player->sendMessage("third song instance.");
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;
             $this->main->getScheduler()->scheduleDelayedRepeatingTask($task, 50, 20);
         } elseif ($this->timer = 532) {
+            $task = $this->tasks[$player->getId()];
+            unset($this->tasks[$player->getId()]);
+            $task->getHandler()->cancel();
             $player->sendMessage("slow song instance.");
             $task = new FireworkTask();
             $this->tasks[$player->getId()] = $task;

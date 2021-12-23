@@ -23,22 +23,22 @@ class FireworkTask extends Task
         $max = 3;
         /** @var Fireworks $fw */
         $fw = ItemFactory::get(Item::FIREWORKS);
-        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_BLACK, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_GREEN, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_RED, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_DARK_GREEN, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_BROWN, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_BLUE, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_DARK_PURPLE, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_GOLD, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_RED, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_GREEN, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_DARK_AQUA, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_GRAY, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_DARK_GRAY, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_PINK, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_YELLOW, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_DARK_GREEN, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_RED, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_GREEN, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_YELLOW, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_LIGHT_AQUA, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_DARK_PINK, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_GREEN, "", false, true);
         $fw->addExplosion(Fireworks::TYPE_BURST, Fireworks::COLOR_GOLD, "", false, true);
-        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_WHITE, "", false, true);
+        $fw->addExplosion(Fireworks::TYPE_HUGE_SPHERE, Fireworks::COLOR_RED, "", false, true);
         $fw->setFlightDuration(mt_rand($min, $max));
 
         // LOBBY
