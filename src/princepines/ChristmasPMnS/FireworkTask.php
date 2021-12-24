@@ -45,8 +45,7 @@ class FireworkTask extends Task
         // Use whatever level you'd like here. Must be loaded
         $level = Server::getInstance()->getLevelByName("lobby");
         $posArray = [new Vector3(260,72,313), new Vector3(260,72,322),
-            new Vector3(260,72,328), new Vector3(260,72,337), new Vector3(324,76,334),
-            new Vector3(324,76,316), new Vector3(327,73,298), new Vector3(327,73,352),
+            new Vector3(260,72,328), new Vector3(260,72,337),
             new Vector3(276,66,339), new Vector3(276,66,310)];
         foreach ($posArray as $array) {
             $getBlockPos = $level->getBlock($array);
